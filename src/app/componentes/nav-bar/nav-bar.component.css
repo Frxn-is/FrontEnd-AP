@@ -1,0 +1,18 @@
+.bg-dark{
+    background-color: var(--color-fondo) !important;
+}
+#logo{
+    height: 70px !important;
+}
+
+#navbarSupportedContent{
+    justify-content: flex-end;
+}
+
+.redes{
+    margin-right: 30px;
+}
+
+.navbar .fa-brands {
+    color: var(--color-text);
+}

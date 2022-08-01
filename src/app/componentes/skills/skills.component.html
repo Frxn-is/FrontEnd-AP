@@ -1,0 +1,22 @@
+<!-- sikills -->
+<div class="skills-container">
+    <div class="titulo">
+        <h3 class="skills">Skills</h3>
+        <p>Mis habilidades</p>
+    </div>
+    <div class="contenedor-items">
+        <div class="skill " *ngFor="let hardSkills of skillsList">
+            <div class="item">
+                <div class="descripcion-item ">
+                    <span>{{hardSkills.title}}</span>
+                    <span class="wp" [style.margin-left]="hardSkills.level">{{hardSkills.level}}</span>
+                </div>
+                <div class="progress col-md-11">
+                    <div class="progress-bar" [style.width]="hardSkills.level">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

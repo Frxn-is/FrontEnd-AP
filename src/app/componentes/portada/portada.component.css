@@ -1,0 +1,15 @@
+.portada{
+    height: 350px;
+    background-color:var(--color-fondo);
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.portada img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

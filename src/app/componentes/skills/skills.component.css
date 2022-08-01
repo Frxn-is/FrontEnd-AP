@@ -1,0 +1,63 @@
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.skills-container .titulo .skills{
+    text-align: center;
+    font-weight: var(--font-weight-title);
+    font-size:var(--font-size-title);
+}
+.skills p{
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-text);
+}
+.skill{
+    margin-bottom: 20px;
+}
+.contenedor-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.skill .descripcion-item{
+    display: flex;
+    justify-content:flex-start;
+    position: relative;
+
+}
+.skills-container .descripcion-item span:last-child{
+    position: absolute;
+}
+
+.skill .item .progress{
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--color-text);
+}
+
+.progress-bar{
+    height: 100%;
+    background: var(--color-primary);
+    border-radius: 10px;
+    animation: progressAnimation 5s;
+}
+
+@keyframes progressAnimation{
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: "hardSkills.level"
+    }
+    
+}

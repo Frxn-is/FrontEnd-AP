@@ -1,0 +1,74 @@
+<!-- Main content -->
+
+<div class="Main-content col-md-12">
+
+    <!--portada-->
+    <div class="portada">
+        <img [src]="miPortafolio.imgPortada" alt="portada" class="img-fluid"> 
+    </div>
+
+
+    <!--img perfil-->
+    <div class="perfil img-fluid">
+        <img [src]="miPortafolio.photoPerfil" alt="img-perfil" class="img-fluid">
+    </div>
+
+    <!--informacion personal-->
+    <div class="informacion-personal" id="informacion">  
+
+        <div id="info-personal" class=" container">
+
+            <div class="personal m-2 col-md-3">
+                <h1 id="nombre"> {{persona.nombre}} {{persona.apellido}}</h1>
+                <h3 id= "titulo">{{persona.profesion}}</h3>
+                <h4 id= "residencia">{{persona.ubicacion}}</h4>
+            </div>
+            <div class="resumen m-5 col-md-8">
+                <p>{{miPortafolio.descripcion}} </p>
+            </div>
+            <div class="botonera m-5 col-md-1">
+                <button class="btn boton-edit" data-toggle="collapse" data-target="#" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                    </svg>
+                </button>
+                <button class="btn boton-edit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+         <!--Modal informacion personal-->
+      <!--<ng-template #informacion let-modal>
+            <div class="modal-header">
+                <h4 class="modal-title">Editar información personal</h4>
+                <button class="btn boton-edit" (click)="modal.dismiss('Cross click')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <h1 id="nombre"> {{miPortafolio.name}} </h1> <input type="text">
+                <h3 id= "titulo">{{miPortafolio.position}}</h3>
+                <h4 id= "residencia">{{miPortafolio.ubication}}</h4>
+                <p>{{miPortafolio.descripcion}} </p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn botones" (click)="modal.dismiss('cancel')">Cancelar</button>
+                <button type="button" class="btn botones" (click)="modal.close('Save click')">Guardar</button>
+            </div>   
+        </ng-template>
+
+        <div class="botones m-3">
+            <button class="btn btn-secondary btn2">Contacto</button>
+            <button class="btn btn-secondary btn2">Agregar más</button>
+        </div>
+
+    </div>
+</div>
+-->
